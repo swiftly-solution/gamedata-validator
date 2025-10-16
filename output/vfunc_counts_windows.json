@@ -1,0 +1,106 @@
+[
+  {
+    "class_name": "IGameSystem",
+    "vfunc_count": 61
+  },
+  {
+    "class_name": "CBaseEntity",
+    "vfunc_count": 243
+  },
+  {
+    "class_name": "CBasePlayerPawn",
+    "vfunc_count": 421
+  },
+  {
+    "class_name": "CCSPlayerPawn",
+    "vfunc_count": 434
+  },
+  {
+    "class_name": "CCSPlayerController",
+    "vfunc_count": 280
+  },
+  {
+    "class_name": "CCSPlayer_WeaponServices",
+    "vfunc_count": 36
+  },
+  {
+    "class_name": "CGameSceneNode",
+    "vfunc_count": 28
+  },
+  {
+    "class_name": "CCSGameRules",
+    "vfunc_count": 128
+  },
+  {
+    "class_name": "CCSPlayer_ItemServices",
+    "vfunc_count": 23
+  },
+  {
+    "class_name": "CSource2GameClients",
+    "vfunc_count": 44
+  },
+  {
+    "class_name": "CSource2GameEntities",
+    "vfunc_count": 17
+  },
+  {
+    "class_name": "CGameEventManager",
+    "vfunc_count": 16
+  },
+  {
+    "class_name": "CLoopModeGame",
+    "vfunc_count": 9
+  },
+  {
+    "class_name": "CGameEventListener",
+    "vfunc_count": 2
+  },
+  {
+    "class_name": "CGameEntitySystem",
+    "vfunc_count": 24
+  },
+  {
+    "class_name": "CSource2Server",
+    "vfunc_count": 97
+  },
+  {
+    "class_name": "CEntityResourceManifest",
+    "vfunc_count": 12
+  },
+  {
+    "class_name": "CServerSideClient",
+    "vfunc_count": 79
+  },
+  {
+    "class_name": "CNetworkServerService",
+    "vfunc_count": 46
+  },
+  {
+    "class_name": "CEngineServiceMgr",
+    "vfunc_count": 61
+  },
+  {
+    "class_name": "CEngineClient",
+    "vfunc_count": 191
+  },
+  {
+    "class_name": "CEngineServer",
+    "vfunc_count": 120
+  },
+  {
+    "class_name": "CCvar",
+    "vfunc_count": 48
+  },
+  {
+    "class_name": "CSoundSystem",
+    "vfunc_count": 133
+  },
+  {
+    "class_name": "CMaterialSystem2",
+    "vfunc_count": 48
+  },
+  {
+    "class_name": "CSchemaSystem",
+    "vfunc_count": 40
+  }
+]

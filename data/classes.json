@@ -1,0 +1,59 @@
+[
+  {
+    "name": "server",
+    "classes": [
+      "IGameSystem",
+      "CBaseEntity",
+      "CBasePlayerPawn",
+      "CCSPlayerPawn",
+      "CCSPlayerController",
+      "CCSPlayer_WeaponServices",
+      "CGameSceneNode",
+      "CCSGameRules",
+      "CCSPlayer_ItemServices",
+      "CSource2GameClients",
+      "CSource2GameEntities",
+      "CGameEventManager",
+      "CLoopModeGame",
+      "CGameEventListener",
+      "CGameEntitySystem",
+      "CSource2Server"
+    ]
+  },
+  {
+    "name": "engine2",
+    "classes": [
+      "CEntityResourceManifest",
+      "CServerSideClient",
+      "CNetworkServerService",
+      "CEngineServiceMgr",
+      "CEngineClient",
+      "CEngineServer"
+
+    ]
+  },
+  {
+    "name": "tier0",
+    "classes": [
+      "CCvar"
+    ]
+  },
+  {
+    "name": "soundsystem",
+    "classes": [
+      "CSoundSystem"
+    ]
+  },
+  {
+    "name": "materialsystem2",
+    "classes": [
+      "CMaterialSystem2"
+    ]
+  },
+  {
+    "name": "schemasystem",
+    "classes": [
+      "CSchemaSystem"
+    ]
+  }
+]
