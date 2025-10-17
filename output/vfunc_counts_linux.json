@@ -24,6 +24,10 @@
     "vfunc_count": 39
   },
   {
+    "class_name": "CCSPlayer_MovementServices",
+    "vfunc_count": 54
+  },
+  {
     "class_name": "CGameSceneNode",
     "vfunc_count": 29
   },
@@ -64,6 +68,18 @@
     "vfunc_count": 98
   },
   {
+    "class_name": "CLoadingSpawnGroup",
+    "vfunc_count": 17
+  },
+  {
+    "class_name": "CTraceFilter",
+    "vfunc_count": 3
+  },
+  {
+    "class_name": "CRecipientFilter",
+    "vfunc_count": 5
+  },
+  {
     "class_name": "CEntityResourceManifest",
     "vfunc_count": 12
   },
@@ -92,8 +108,28 @@
     "vfunc_count": 48
   },
   {
+    "class_name": "CNetworkMessages",
+    "vfunc_count": 39
+  },
+  {
+    "class_name": "CNetworkSerializerPB",
+    "vfunc_count": 10
+  },
+  {
+    "class_name": "CNetworkSystem",
+    "vfunc_count": 57
+  },
+  {
     "class_name": "CSoundSystem",
     "vfunc_count": 134
+  },
+  {
+    "class_name": "CSoundOpSystem",
+    "vfunc_count": 168
+  },
+  {
+    "class_name": "CSoundEventManager",
+    "vfunc_count": 63
   },
   {
     "class_name": "CMaterialSystem2",
@@ -102,5 +138,9 @@
   {
     "class_name": "CSchemaSystem",
     "vfunc_count": 41
+  },
+  {
+    "class_name": "CSchemaType",
+    "vfunc_count": 3
   }
 ]

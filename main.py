@@ -42,12 +42,16 @@ def dump_vfunc_counts(os):
     for class_info in classes:
       class_binary_name = class_info["name"]
       for class_name in class_info["classes"]:
-        vtable_va = s2binlib.find_vtable_va(class_binary_name, class_name)
-        vfunc_count = s2binlib.get_vfunc_count(class_binary_name, class_name)
-        outputs.append({
-          "class_name": class_name,
-          "vfunc_count": vfunc_count
-        })
+        try:
+          vtable_va = s2binlib.find_vtable_va(class_binary_name, class_name)
+          vfunc_count = s2binlib.get_vfunc_count(class_binary_name, class_name)
+          outputs.append({
+            "class_name": class_name,
+            "vfunc_count": vfunc_count
+          })
+        except Exception as e:
+          print(f"Error finding vtable for {class_name} in {class_binary_name}: {e}")
+          continue
 
   with open(f"output/vfunc_counts_{os}.json", "w") as f:
     json.dump(outputs, f, indent=2)
@@ -69,13 +73,15 @@ def pattern_scan(os):
 
 if __name__ == "__main__":
   os.makedirs("output", exist_ok=True)
-  os.makedirs("workspace/binaries", exist_ok=True)
   os.makedirs("workspace/swiftlys2", exist_ok=True)
-  
-  download_depots()
-  download_swiftlys2()
+
+  if not os.path.exists("workspace/binaries"):
+    os.makedirs("workspace/binaries")
+    download_depots()
+  if not os.path.exists("workspace/swiftlys2"):
+    download_swiftlys2()
 
   for os in ["windows", "linux"]:
-    s2binlib.initialize("./workspace/binaries/game", "csgo", os)
+    s2binlib.initialize(f"./workspace/binaries/game", "csgo", os)
     dump_vfunc_counts(os)
     pattern_scan(os)

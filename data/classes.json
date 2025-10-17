@@ -8,6 +8,7 @@
       "CCSPlayerPawn",
       "CCSPlayerController",
       "CCSPlayer_WeaponServices",
+      "CCSPlayer_MovementServices",
       "CGameSceneNode",
       "CCSGameRules",
       "CCSPlayer_ItemServices",
@@ -17,7 +18,11 @@
       "CLoopModeGame",
       "CGameEventListener",
       "CGameEntitySystem",
-      "CSource2Server"
+      "CSource2Server",
+      "CLoadingSpawnGroup",
+      "CTraceFilter",
+      "CRecipientFilter",
+      "CGameEvent"
     ]
   },
   {
@@ -39,9 +44,19 @@
     ]
   },
   {
+    "name": "networksystem",
+    "classes": [
+      "CNetworkMessages",
+      "CNetworkSerializerPB",
+      "CNetworkSystem"
+    ]
+  },
+  {
     "name": "soundsystem",
     "classes": [
-      "CSoundSystem"
+      "CSoundSystem",
+      "CSoundOpSystem",
+      "CSoundEventManager"
     ]
   },
   {
@@ -53,7 +68,8 @@
   {
     "name": "schemasystem",
     "classes": [
-      "CSchemaSystem"
+      "CSchemaSystem",
+      "CSchemaType"
     ]
   }
 ]
