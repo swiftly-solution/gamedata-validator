@@ -87,7 +87,7 @@ def commit_and_push_changes(signature):
     try:
         repo = git.Repo('.')
 
-        repo.index.add(['output/*'])
+        repo.index.add(['output/*', 'public730.txt'])
 
         if repo.index.diff("HEAD") or repo.untracked_files:
             commit_message = f"update(results): Validating files for `{signature}`"
