@@ -1,0 +1,6 @@
+GitPython
+commentjson
+gevent
+steam[client]
+eventemitter
+python-dotenv

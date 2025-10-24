@@ -1,5 +1,6 @@
 import ctypes as C
 from ctypes import *
+import platform
 
 PatternScanCallback = CFUNCTYPE(
     c_bool,
@@ -12,7 +13,7 @@ dll = None
 
 def initialize(game_path, game_name, os):
     global dll
-    dll = C.cdll.LoadLibrary("./s2binlib.dll")
+    dll = C.cdll.LoadLibrary("./lib/s2binlib.so" if platform.system() != "Windows" else "./lib/s2binlib.dll")
     ret = dll.s2binlib_initialize_with_os(game_path.encode(), game_name.encode(), os.encode())
     if ret != 0:
         raise Exception(f"Failed to initialize, error code {ret}")
