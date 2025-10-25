@@ -18,7 +18,7 @@ def get_file_signature(url, algorithm='sha256'):
         if chunk:
             hash_obj.update(chunk)
     
-    return hash_obj.hexdigest()[0:16:1]
+    return hash_obj.hexdigest()
 
 def GetSignatureJsonSignature():
     return get_file_signature("https://raw.githubusercontent.com/swiftly-solution/swiftlys2/refs/heads/master/plugin_files/gamedata/cs2/core/signatures.jsonc")
