@@ -48,6 +48,8 @@ def CheckGameUpdates(app_id):
         updated_depots.append('2347771')
     if gid_2347773 not in file_info:
         updated_depots.append('2347773')
+    if not update_signature in file_info:
+        updated_depots.append('signatures.jsonc')
 
     if updated_depots:
         try:
