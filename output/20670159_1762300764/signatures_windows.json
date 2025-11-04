@@ -1,0 +1,162 @@
+[
+    {
+        "signature": "CEntityInstance::AcceptInput",
+        "va": "server.0x180dc2e10",
+        "count": 1
+    },
+    {
+        "signature": "CEntityIdentity::AcceptInput",
+        "va": "server.0x180dc6ee0",
+        "count": 1
+    },
+    {
+        "signature": "CCSPlayerController::SwitchTeam",
+        "va": "server.0x180720740",
+        "count": 1
+    },
+    {
+        "signature": "UTIL::CreateEntityByName",
+        "va": "server.0x1808293e0",
+        "count": 1
+    },
+    {
+        "signature": "CBaseModelEntity::SetModel",
+        "va": "server.0x1807af300",
+        "count": 1
+    },
+    {
+        "signature": "CBaseEntity::DispatchSpawn",
+        "va": "server.0x1808b0020",
+        "count": 1
+    },
+    {
+        "signature": "UTIL::Remove",
+        "va": "server.0x18085e610",
+        "count": 1
+    },
+    {
+        "signature": "LegacyGameEventListener",
+        "va": "server.0x180836b40",
+        "count": 1
+    },
+    {
+        "signature": "CAttributeList::SetOrAddAttributeValueByName",
+        "va": "server.0x180b52f10",
+        "count": 1
+    },
+    {
+        "signature": "CTakeDamageInfo::Constructor",
+        "va": "server.0x180ab99e0",
+        "count": 1
+    },
+    {
+        "signature": "CEntityIOOutput::FireOutputInternal",
+        "va": "server.0x180dbd0a0",
+        "count": 1
+    },
+    {
+        "signature": "CBasePlayerController::SetPawn",
+        "va": "server.0x1807afb60",
+        "count": 1
+    },
+    {
+        "signature": "CCSPlayerPawnBase::PostThink",
+        "va": "server.0x1801c9270",
+        "count": 1
+    },
+    {
+        "signature": "CGameRules::TerminateRound",
+        "va": "server.0x1806753f0",
+        "count": 1
+    },
+    {
+        "signature": "CBaseEntity::TakeDamage",
+        "va": "server.0x1802fd410",
+        "count": 1
+    },
+    {
+        "signature": "BotNavIgnore1",
+        "va": "server.0x180212c3e",
+        "count": 1
+    },
+    {
+        "signature": "BotNavIgnore2",
+        "va": "server.0x180212c3e",
+        "count": 1
+    },
+    {
+        "signature": "BotNavIgnore3",
+        "va": "server.0x180212c3e",
+        "count": 1
+    },
+    {
+        "signature": "IGameSystem::InitAllSystems->pFirst",
+        "va": "server.0x1803735f3",
+        "count": 1
+    },
+    {
+        "signature": "IGameSystem::LoopPostInitAllSystems->pEventDispatcher",
+        "va": "server.0x180378db9",
+        "count": 1
+    },
+    {
+        "signature": "IGameSystem::LoopDestroyAllSystems->s_GameSystems",
+        "va": "server.0x180378696",
+        "count": 1
+    },
+    {
+        "signature": "CCSPlayerController::ProcessUserCmd",
+        "va": "server.0x1807a3970",
+        "count": 1
+    },
+    {
+        "signature": "CSource2Server::g_GameEventManager",
+        "va": "server.0x18096d3d0",
+        "count": 1
+    },
+    {
+        "signature": "CEntitySystem::AddEntityIOEvent",
+        "va": "server.0x180da55f0",
+        "count": 1
+    },
+    {
+        "signature": "TracePlayerBBox",
+        "va": "server.0x18073c600",
+        "count": 1
+    },
+    {
+        "signature": "TraceShape",
+        "va": "server.0x18085d410",
+        "count": 1
+    },
+    {
+        "signature": "CCSPlayer_ItemServices::CanAcquire",
+        "va": "server.0x180702bf0",
+        "count": 1
+    },
+    {
+        "signature": "INetworkMessageProcessingPreFilter::FilterMessage",
+        "va": "engine2.0x1800cc470",
+        "count": 1
+    },
+    {
+        "signature": "CLoggingSystem::LogDirect",
+        "va": "tier0.0x180124aa0",
+        "count": 1
+    },
+    {
+        "signature": "Cmd_ExecuteCommand",
+        "va": "engine2.0x1801c4430",
+        "count": 1
+    },
+    {
+        "signature": "GetWeaponCSDataFromKey",
+        "va": "server.0x180377bd0",
+        "count": 1
+    },
+    {
+        "signature": "DispatchParticleEffect",
+        "va": "server.0x18086f480",
+        "count": 1
+    }
+]
