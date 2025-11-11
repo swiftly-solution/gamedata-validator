@@ -5,6 +5,7 @@ import time
 import commentjson
 import git
 import s2binlib
+import shutil
 from os import path, makedirs
 from dotenv import load_dotenv
 from steamchecker import CheckGameUpdates, GetSignature
@@ -125,6 +126,8 @@ def CheckUpdate():
 
         notify_vfunc_results(vfunc_results, GetSignature())
         notify_pattern_scan_results(scan_results, GetSignature())
+
+        shutil.copy(f"output/{GetSignature()}", f"output/latest")
 
         commit_and_push_changes(GetSignature())
 
