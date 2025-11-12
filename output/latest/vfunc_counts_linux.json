@@ -1,0 +1,224 @@
+[
+    {
+        "class_name": "IGameSystem",
+        "vfunc_count": 59,
+        "va": "server.0x1d1ad90",
+        "binary": "server"
+    },
+    {
+        "class_name": "CBaseEntity",
+        "vfunc_count": 244,
+        "va": "server.0x1d23c50",
+        "binary": "server"
+    },
+    {
+        "class_name": "CBasePlayerPawn",
+        "vfunc_count": 422,
+        "va": "server.0x1d27ee8",
+        "binary": "server"
+    },
+    {
+        "class_name": "CCSPlayerPawn",
+        "vfunc_count": 436,
+        "va": "server.0x1cccb88",
+        "binary": "server"
+    },
+    {
+        "class_name": "CCSPlayerController",
+        "vfunc_count": 282,
+        "va": "server.0x1dd4d18",
+        "binary": "server"
+    },
+    {
+        "class_name": "CCSPlayer_WeaponServices",
+        "vfunc_count": 39,
+        "va": "server.0x1dd9408",
+        "binary": "server"
+    },
+    {
+        "class_name": "CCSPlayer_MovementServices",
+        "vfunc_count": 55,
+        "va": "server.0x1dd7220",
+        "binary": "server"
+    },
+    {
+        "class_name": "CGameSceneNode",
+        "vfunc_count": 29,
+        "va": "server.0x1dec1b0",
+        "binary": "server"
+    },
+    {
+        "class_name": "CCSGameRules",
+        "vfunc_count": 129,
+        "va": "server.0x1d8a170",
+        "binary": "server"
+    },
+    {
+        "class_name": "CCSPlayer_ItemServices",
+        "vfunc_count": 24,
+        "va": "server.0x1dd5930",
+        "binary": "server"
+    },
+    {
+        "class_name": "CSource2GameClients",
+        "vfunc_count": 44,
+        "va": "server.0x1e16ae0",
+        "binary": "server"
+    },
+    {
+        "class_name": "CSource2GameEntities",
+        "vfunc_count": 20,
+        "va": "server.0x1e16a00",
+        "binary": "server"
+    },
+    {
+        "class_name": "CGameEventManager",
+        "vfunc_count": 17,
+        "va": "server.0x1deb3c0",
+        "binary": "server"
+    },
+    {
+        "class_name": "CLoopModeGame",
+        "vfunc_count": 18,
+        "va": "server.0x1decf80",
+        "binary": "server"
+    },
+    {
+        "class_name": "CGameEventListener",
+        "vfunc_count": 0,
+        "va": "server.0x1cc83b8",
+        "binary": "server"
+    },
+    {
+        "class_name": "CGameEntitySystem",
+        "vfunc_count": 25,
+        "va": "server.0x1dea490",
+        "binary": "server"
+    },
+    {
+        "class_name": "CSource2Server",
+        "vfunc_count": 98,
+        "va": "server.0x1e16628",
+        "binary": "server"
+    },
+    {
+        "class_name": "CLoadingSpawnGroup",
+        "vfunc_count": 17,
+        "va": "server.0x1dea7c8",
+        "binary": "server"
+    },
+    {
+        "class_name": "CTraceFilter",
+        "vfunc_count": 3,
+        "va": "server.0x1cc8238",
+        "binary": "server"
+    },
+    {
+        "class_name": "CRecipientFilter",
+        "vfunc_count": 6,
+        "va": "server.0x1df1020",
+        "binary": "server"
+    },
+    {
+        "class_name": "CGameEvent",
+        "vfunc_count": 35,
+        "va": "server.0x1deb298",
+        "binary": "server"
+    },
+    {
+        "class_name": "CEntityResourceManifest",
+        "vfunc_count": 12,
+        "va": "engine2.0x928458",
+        "binary": "engine2"
+    },
+    {
+        "class_name": "CServerSideClient",
+        "vfunc_count": 81,
+        "va": "engine2.0x93a278",
+        "binary": "engine2"
+    },
+    {
+        "class_name": "CNetworkServerService",
+        "vfunc_count": 48,
+        "va": "engine2.0x92c2a0",
+        "binary": "engine2"
+    },
+    {
+        "class_name": "CEngineServiceMgr",
+        "vfunc_count": 62,
+        "va": "engine2.0x926b70",
+        "binary": "engine2"
+    },
+    {
+        "class_name": "CEngineClient",
+        "vfunc_count": 190,
+        "va": "engine2.0x938450",
+        "binary": "engine2"
+    },
+    {
+        "class_name": "CEngineServer",
+        "vfunc_count": 120,
+        "va": "engine2.0x93abc0",
+        "binary": "engine2"
+    },
+    {
+        "class_name": "CCvar",
+        "vfunc_count": 48,
+        "va": "tier0.0x4adba0",
+        "binary": "tier0"
+    },
+    {
+        "class_name": "CNetworkMessages",
+        "vfunc_count": 39,
+        "va": "networksystem.0x450428",
+        "binary": "networksystem"
+    },
+    {
+        "class_name": "CNetworkSerializerPB",
+        "vfunc_count": 10,
+        "va": "networksystem.0x450b50",
+        "binary": "networksystem"
+    },
+    {
+        "class_name": "CNetworkSystem",
+        "vfunc_count": 57,
+        "va": "networksystem.0x450fa8",
+        "binary": "networksystem"
+    },
+    {
+        "class_name": "CSoundSystem",
+        "vfunc_count": 134,
+        "va": "soundsystem.0x4b23a0",
+        "binary": "soundsystem"
+    },
+    {
+        "class_name": "CSoundOpSystem",
+        "vfunc_count": 168,
+        "va": "soundsystem.0x4afda8",
+        "binary": "soundsystem"
+    },
+    {
+        "class_name": "CSoundEventManager",
+        "vfunc_count": 63,
+        "va": "soundsystem.0x4afba0",
+        "binary": "soundsystem"
+    },
+    {
+        "class_name": "CMaterialSystem2",
+        "vfunc_count": 49,
+        "va": "materialsystem2.0x195990",
+        "binary": "materialsystem2"
+    },
+    {
+        "class_name": "CSchemaSystem",
+        "vfunc_count": 41,
+        "va": "schemasystem.0xa3b08",
+        "binary": "schemasystem"
+    },
+    {
+        "class_name": "CSchemaType",
+        "vfunc_count": 3,
+        "va": "schemasystem.0xa3c60",
+        "binary": "schemasystem"
+    }
+]
