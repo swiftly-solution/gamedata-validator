@@ -1,177 +1,177 @@
 [
     {
         "signature": "CEntityInstance::AcceptInput",
-        "va": "server.0x180dc4450",
+        "va": "server.0x1936fd0",
         "count": 1
     },
     {
         "signature": "CEntityIdentity::AcceptInput",
-        "va": "server.0x180dc8520",
+        "va": "server.0x19337c0",
         "count": 1
     },
     {
         "signature": "CCSPlayerController::SwitchTeam",
-        "va": "server.0x180721780",
+        "va": "server.0x10be430",
         "count": 1
     },
     {
         "signature": "UTIL::CreateEntityByName",
-        "va": "server.0x18082a790",
+        "va": "server.0x121ac80",
         "count": 1
     },
     {
         "signature": "CBaseModelEntity::SetModel",
-        "va": "server.0x1807b0860",
+        "va": "server.0x1145010",
         "count": 1
     },
     {
         "signature": "CBaseEntity::DispatchSpawn",
-        "va": "server.0x1808b13e0",
+        "va": "server.0x12b56e0",
         "count": 1
     },
     {
         "signature": "UTIL::Remove",
-        "va": "server.0x18085f9c0",
+        "va": "server.0x121afc0",
         "count": 1
     },
     {
         "signature": "LegacyGameEventListener",
-        "va": "server.0x180837ef0",
+        "va": "server.0x121ca20",
         "count": 1
     },
     {
         "signature": "CAttributeList::SetOrAddAttributeValueByName",
-        "va": "server.0x180b54550",
+        "va": "server.0x15f2600",
         "count": 1
     },
     {
         "signature": "CTakeDamageInfo::Constructor",
-        "va": "server.0x180abada0",
+        "va": "server.0x1557c50",
         "count": 1
     },
     {
         "signature": "CEntityIOOutput::FireOutputInternal",
-        "va": "server.0x180dbe6e0",
+        "va": "server.0x19640a0",
         "count": 1
     },
     {
         "signature": "CBasePlayerController::SetPawn",
-        "va": "server.0x1807b10c0",
+        "va": "server.0x1163f20",
         "count": 1
     },
     {
         "signature": "CCSPlayerPawn::PostThink",
-        "va": "server.0x1801c9250",
+        "va": "server.0x9e2380",
         "count": 1
     },
     {
         "signature": "CGameRules::TerminateRound",
-        "va": "server.0x18066c0f0",
+        "va": "server.0xf86270",
         "count": 1
     },
     {
         "signature": "CBaseEntity::TakeDamage",
-        "va": "server.0x1802fd3f0",
+        "va": "server.0xb565d0",
         "count": 1
     },
     {
         "signature": "BotNavIgnore1",
-        "va": "server.0x180212c1e",
+        "va": "server.0xa48cbe",
         "count": 1
     },
     {
         "signature": "BotNavIgnore2",
-        "va": "server.0x180212c1e",
+        "va": "server.0xa48cbe",
         "count": 1
     },
     {
         "signature": "BotNavIgnore3",
-        "va": "server.0x180212c1e",
+        "va": "server.0xa48cbe",
         "count": 1
     },
     {
         "signature": "IGameSystem::InitAllSystems->pFirst",
-        "va": "server.0x1803735d3",
+        "va": "server.0xc35cc6",
         "count": 1
     },
     {
         "signature": "CCSPlayerController::ProcessUserCmd",
-        "va": "server.0x1807a4cc0",
+        "va": "server.0x116de80",
         "count": 1
     },
     {
         "signature": "CSource2Server::g_GameEventManager",
-        "va": "server.0x18096e510",
+        "va": "server.0x13ae3e0",
         "count": 1
     },
     {
         "signature": "CEntitySystem::AddEntityIOEvent",
-        "va": "server.0x180da6c30",
+        "va": "server.0x1958b60",
         "count": 1
     },
     {
         "signature": "TracePlayerBBox",
-        "va": "server.0x18073d690",
+        "va": "server.0x10c3e90",
         "count": 1
     },
     {
         "signature": "TraceShape",
-        "va": "server.0x18085e7c0",
+        "va": "server.0x121f340",
         "count": 1
     },
     {
         "signature": "CCSPlayer_ItemServices::CanAcquire",
-        "va": "server.0x180703c30",
+        "va": "server.0x1099f70",
         "count": 1
     },
     {
         "signature": "INetworkMessageProcessingPreFilter::FilterMessage",
-        "va": "engine2.0x1800cc530",
+        "va": "engine2.0x6aa700",
         "count": 1
     },
     {
         "signature": "CLoggingSystem::LogDirect",
-        "va": "tier0.0x180124aa0",
+        "va": "tier0.0x28a9a0",
         "count": 1
     },
     {
         "signature": "Cmd_ExecuteCommand",
-        "va": "engine2.0x1801c4550",
+        "va": "engine2.0x58d000",
         "count": 1
     },
     {
         "signature": "GetWeaponCSDataFromKey",
-        "va": "server.0x180377bb0",
+        "va": "server.0xbf6840",
         "count": 1
     },
     {
         "signature": "DispatchParticleEffect",
-        "va": "server.0x180870830",
+        "va": "server.0x127f590",
         "count": 1
     },
     {
         "signature": "CSmokeGrenadeProjectile::EmitGrenade",
-        "va": "server.0x1806a0f50",
+        "va": "server.0x100a650",
         "count": 1
     },
     {
         "signature": "CFlashbangProjectile::EmitGrenade",
-        "va": "server.0x1802c7820",
+        "va": "server.0xb2faf0",
         "count": 1
     },
     {
         "signature": "CHEGrenadeProjectile::EmitGrenade",
-        "va": "server.0x1802c78e0",
+        "va": "server.0xb316a0",
         "count": 1
     },
     {
         "signature": "CDecoyProjectile::EmitGrenade",
-        "va": "server.0x1806a01b0",
+        "va": "server.0x10091f0",
         "count": 1
     },
     {
         "signature": "CMolotovProjectile::EmitGrenade",
-        "va": "server.0x1806a0670",
+        "va": "server.0x100b030",
         "count": 1
     }
 ]
