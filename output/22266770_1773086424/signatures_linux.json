@@ -1,0 +1,187 @@
+[
+    {
+        "signature": "CEntityInstance::AcceptInput",
+        "va": "server.0x1d56b10",
+        "count": 1
+    },
+    {
+        "signature": "CEntityIdentity::AcceptInput",
+        "va": "server.0x1d532c0",
+        "count": 1
+    },
+    {
+        "signature": "CCSPlayerController::SwitchTeam",
+        "va": "server.0x138a4e0",
+        "count": 1
+    },
+    {
+        "signature": "UTIL::CreateEntityByName",
+        "va": "server.0x1510640",
+        "count": 1
+    },
+    {
+        "signature": "CBaseModelEntity::SetModel",
+        "va": "server.0x143dec0",
+        "count": 2
+    },
+    {
+        "signature": "CBaseEntity::DispatchSpawn",
+        "va": "server.0x15da930",
+        "count": 1
+    },
+    {
+        "signature": "UTIL::Remove",
+        "va": "server.0x1510980",
+        "count": 1
+    },
+    {
+        "signature": "LegacyGameEventListener",
+        "va": "server.0x15123f0",
+        "count": 1
+    },
+    {
+        "signature": "CAttributeList::SetOrAddAttributeValueByName",
+        "va": "server.0x196d7a0",
+        "count": 1
+    },
+    {
+        "signature": "CTakeDamageInfo::Constructor",
+        "va": "server.0x18bf5b0",
+        "count": 1
+    },
+    {
+        "signature": "CEntityIOOutput::FireOutputInternal",
+        "va": "server.0x1d84420",
+        "count": 1
+    },
+    {
+        "signature": "CBasePlayerController::SetPawn",
+        "va": "server.0x14574f0",
+        "count": 1
+    },
+    {
+        "signature": "CCSPlayerPawn::PostThink",
+        "va": "server.0xa5bc20",
+        "count": 1
+    },
+    {
+        "signature": "CGameRules::TerminateRound",
+        "va": "server.0x11d67b0",
+        "count": 1
+    },
+    {
+        "signature": "CBaseEntity::TakeDamage",
+        "va": "server.0xc92bd0",
+        "count": 1
+    },
+    {
+        "signature": "BotNavIgnore1",
+        "va": "server.0xb50b0e",
+        "count": 1
+    },
+    {
+        "signature": "BotNavIgnore2",
+        "va": "server.0xb50b0e",
+        "count": 1
+    },
+    {
+        "signature": "BotNavIgnore3",
+        "va": "server.0xb50b0e",
+        "count": 1
+    },
+    {
+        "signature": "IGameSystem::InitAllSystems->pFirst",
+        "va": "server.0xe09086",
+        "count": 1
+    },
+    {
+        "signature": "CCSPlayerController::ProcessUserCmd",
+        "va": "server.0x1461000",
+        "count": 1
+    },
+    {
+        "signature": "CSource2Server::g_GameEventManager",
+        "va": "server.0x16f3450",
+        "count": 1
+    },
+    {
+        "signature": "CEntitySystem::AddEntityIOEvent",
+        "va": "server.0x1d78810",
+        "count": 1
+    },
+    {
+        "signature": "TracePlayerBBox",
+        "va": "server.0x13917d0",
+        "count": 1
+    },
+    {
+        "signature": "TraceShape",
+        "va": "server.0x1514cc0",
+        "count": 1
+    },
+    {
+        "signature": "CCSPlayer_ItemServices::CanAcquire",
+        "va": "server.0x1349f10",
+        "count": 1
+    },
+    {
+        "signature": "INetworkMessageProcessingPreFilter::FilterMessage",
+        "va": "engine2.0x6b8d70",
+        "count": 1
+    },
+    {
+        "signature": "CLoggingSystem::LogDirect",
+        "va": "tier0.0x28de80",
+        "count": 1
+    },
+    {
+        "signature": "Cmd_ExecuteCommand",
+        "va": "engine2.0x599040",
+        "count": 1
+    },
+    {
+        "signature": "GetWeaponCSDataFromKey",
+        "va": "server.0xdcdac0",
+        "count": 1
+    },
+    {
+        "signature": "DispatchParticleEffect",
+        "va": "server.0x1587590",
+        "count": 1
+    },
+    {
+        "signature": "CSmokeGrenadeProjectile::EmitGrenade",
+        "va": "server.0x128f760",
+        "count": 1
+    },
+    {
+        "signature": "CFlashbangProjectile::EmitGrenade",
+        "va": "server.0xc69060",
+        "count": 1
+    },
+    {
+        "signature": "CHEGrenadeProjectile::EmitGrenade",
+        "va": "server.0xc6a1c0",
+        "count": 1
+    },
+    {
+        "signature": "CDecoyProjectile::EmitGrenade",
+        "va": "server.0x128e960",
+        "count": 1
+    },
+    {
+        "signature": "CMolotovProjectile::EmitGrenade",
+        "va": "server.0x12906e0",
+        "count": 1
+    },
+    {
+        "signature": "DispatchDatamapFunction",
+        "va": "server.0xc9b340",
+        "count": 1
+    },
+    {
+        "signature": "CCSPlayer_WeaponServices::DropWeapon",
+        "va": "server.0x13fbbe0",
+        "count": 1
+    }
+]
