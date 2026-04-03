@@ -57,7 +57,7 @@ def send_discord_webhook(title, description, fields=None, color=None, files=None
         print(f"Failed to send Discord notification: {e}")
 
 
-def notify_vfunc_results(vfunc_results, signature):
+def notify_vfunc_results(vfunc_results, signature, branch):
     windows_results = {r['class_name']: r for r in vfunc_results.get('windows', [])}
     linux_results = {r['class_name']: r for r in vfunc_results.get('linux', [])}
 
@@ -71,7 +71,12 @@ def notify_vfunc_results(vfunc_results, signature):
         {
             "name": "Build Signature",
             "value": signature,
-            "inline": False
+            "inline": True
+        },
+        {
+            "name": "Game Branch",
+            "value": branch,
+            "inline": True
         },
         {
             "name": "Total VTables",
@@ -160,7 +165,7 @@ def notify_vfunc_results(vfunc_results, signature):
     )
 
 
-def notify_pattern_scan_results(scan_results, signature):
+def notify_pattern_scan_results(scan_results, signature, branch):
     def get_circle(count):
         if count == 0:
             return "🔴"
@@ -184,7 +189,12 @@ def notify_pattern_scan_results(scan_results, signature):
         {
             "name": "Build Signature",
             "value": signature,
-            "inline": False
+            "inline": True
+        },
+        {
+            "name": "Game Branch",
+            "value": branch,
+            "inline": True
         },
         {
             "name": "Total Signatures",

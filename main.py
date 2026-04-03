@@ -128,8 +128,8 @@ def CheckUpdate(branch='public', signatures_file=None):
             vfunc_results[os] = dump_vfunc_counts(os)
             scan_results[os] = pattern_scan(os, signatures_file)
 
-        notify_vfunc_results(vfunc_results, GetSignature())
-        notify_pattern_scan_results(scan_results, GetSignature())
+        notify_vfunc_results(vfunc_results, GetSignature(), branch)
+        notify_pattern_scan_results(scan_results, GetSignature(), branch)
 
         if path.exists("output/latest"):
             shutil.rmtree("output/latest")
