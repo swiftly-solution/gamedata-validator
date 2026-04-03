@@ -6,6 +6,7 @@ import commentjson
 import git
 import s2binlib
 import shutil
+import argparse
 from os import path, makedirs
 from dotenv import load_dotenv
 from steamchecker import CheckGameUpdates, GetSignature
@@ -13,10 +14,10 @@ from discord_notifier import notify_vfunc_results, notify_pattern_scan_results
 
 load_dotenv()
 
-def download_depot(depot_id):
+def download_depot(depot_id, branch='public'):
     executable = './data/DepotDownloader' + ('.exe' if platform.system() == 'Windows' else '')
 
-    args = ['-app', '730', '-depot', str(depot_id), '-dir', f"{workspace_name}/binaries", '-filelist', './data/files.txt']
+    args = ['-app', '730', '-depot', str(depot_id), '-branch', branch, '-dir', f"{workspace_name}/binaries", '-filelist', './data/files.txt']
 
     command = [executable] + args
     print(f"Running command for depot {depot_id}: {' '.join(command)}")
@@ -32,9 +33,9 @@ def download_depot(depot_id):
         print(f"Error from Depot {depot_id}:")
         print(stderr.decode())
 
-def download_depots():
-  download_depot(2347771)
-  download_depot(2347773)
+def download_depots(branch='public'):
+  download_depot(2347771, branch)
+  download_depot(2347773, branch)
 
 def download_swiftlys2():
   repo = git.Repo.clone_from(
@@ -67,9 +68,12 @@ def dump_vfunc_counts(os):
 
     return outputs
 
-def pattern_scan(os):
+def pattern_scan(os, signatures_file=None):
     outputs = []
-    with open(f"{workspace_name}/swiftlys2/plugin_files/gamedata/cs2/core/signatures.jsonc", "r") as f:
+    if signatures_file is None:
+        signatures_file = f"{workspace_name}/swiftlys2/plugin_files/gamedata/cs2/core/signatures.jsonc"
+    
+    with open(signatures_file, "r") as f:
         signatures = commentjson.load(f, )
         for signature_name, signature in signatures.items():
             match, count = s2binlib.pattern_scan(signature["lib"], signature[os])
@@ -103,9 +107,9 @@ def commit_and_push_changes(signature):
     except Exception as e:
         print(f"Error committing/pushing changes: {e}")
 
-def CheckUpdate():
+def CheckUpdate(branch='public', signatures_file=None):
     global workspace_name
-    updated_depots = CheckGameUpdates(730)
+    updated_depots = CheckGameUpdates(730, branch)
     if updated_depots:
         workspace_name = "workspace_"+ GetSignature()
         makedirs(f"output/{GetSignature()}", exist_ok=True)
@@ -113,7 +117,7 @@ def CheckUpdate():
 
         if not path.exists(workspace_name+"/binaries"):
             makedirs(workspace_name+"/binaries")
-            download_depots()
+            download_depots(branch)
 
         download_swiftlys2()
 
@@ -122,7 +126,7 @@ def CheckUpdate():
         for os in ["windows", "linux"]:
             s2binlib.initialize(f"./{workspace_name}/binaries/game", "csgo", os)
             vfunc_results[os] = dump_vfunc_counts(os)
-            scan_results[os] = pattern_scan(os)
+            scan_results[os] = pattern_scan(os, signatures_file)
 
         notify_vfunc_results(vfunc_results, GetSignature())
         notify_pattern_scan_results(scan_results, GetSignature())
@@ -134,6 +138,11 @@ def CheckUpdate():
         commit_and_push_changes(GetSignature())
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description='Gamedata validator for CS2')
+    parser.add_argument('--branch', type=str, default='public', help='Game branch to check (default: public)')
+    parser.add_argument('--signatures', type=str, default=None, help='Path to custom signatures file')
+    args = parser.parse_args()
+    
     while True:
-        CheckUpdate()
+        CheckUpdate(branch=args.branch, signatures_file=args.signatures)
         time.sleep(10)

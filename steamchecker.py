@@ -23,7 +23,7 @@ def get_file_signature(url, algorithm='sha256'):
 def GetSignatureJsonSignature():
     return get_file_signature("https://raw.githubusercontent.com/swiftly-solution/swiftlys2/refs/heads/master/plugin_files/gamedata/cs2/core/signatures.jsonc")
 
-def CheckGameUpdates(app_id):
+def CheckGameUpdates(app_id, branch='public'):
     global build_id
 
     try:
@@ -31,9 +31,9 @@ def CheckGameUpdates(app_id):
     except:
         return False
 
-    build_id = str(api_data['apps'][f'{app_id}']['depots']['branches']['public']['buildid'])
-    gid_2347771 = str(api_data['apps'][f'{app_id}']['depots']['2347771']['manifests']['public']['gid'])
-    gid_2347773 = str(api_data['apps'][f'{app_id}']['depots']['2347773']['manifests']['public']['gid'])
+    build_id = str(api_data['apps'][f'{app_id}']['depots']['branches'][branch]['buildid'])
+    gid_2347771 = str(api_data['apps'][f'{app_id}']['depots']['2347771']['manifests'][branch]['gid'])
+    gid_2347773 = str(api_data['apps'][f'{app_id}']['depots']['2347773']['manifests'][branch]['gid'])
     
     update_signature = f"{build_id}|{gid_2347771}|{gid_2347773}|{GetSignatureJsonSignature()}"
 
